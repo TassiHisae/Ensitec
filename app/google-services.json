@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "199100325736",
+    "firebase_url": "https://ensitecteste-79c8b.firebaseio.com",
+    "project_id": "ensitecteste-79c8b",
+    "storage_bucket": "ensitecteste-79c8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199100325736:android:62d7438c82d36d47f6c0dd",
+        "android_client_info": {
+          "package_name": "com.example.ensitec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199100325736-le7c3s49a748krmos53n6vpn4fk7d3n0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB-pBBIQ7EfDDxBnLPv1c19DWivfqpsfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199100325736-le7c3s49a748krmos53n6vpn4fk7d3n0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
