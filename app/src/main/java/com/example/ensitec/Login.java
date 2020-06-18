@@ -32,15 +32,16 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.login);
 
-        login = (EditText) findViewById(R.id.txt_login);
-        pass = (EditText) findViewById(R.id.txt_senha);
+        login = (EditText) findViewById(R.id.email);
+        pass = (EditText) findViewById(R.id.senha);
     }
 
-    public void entrar(View view) {
-        final String loginnovo = login.getText().toString();
-        String senhanova = pass.getText().toString();
+    public Login(String email, String senha){
+
+        final String loginnovo = email;
+        String senhanova = senha;
         if(!campoVazio(loginnovo,senhanova)) {
             if(eEmail(loginnovo)){
                 firebaseAuth.signInWithEmailAndPassword(loginnovo,senhanova)
@@ -85,6 +86,7 @@ public class Login extends AppCompatActivity {
                 });
             }
         }
+
     }
 
     public boolean campoVazio(String usuario, String senha){

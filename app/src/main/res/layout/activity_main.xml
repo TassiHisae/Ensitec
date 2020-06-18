@@ -4,71 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/tela_login"
+    >
 
-    <EditText
-        android:id="@+id/user"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="115dp"
-        android:layout_marginBottom="28dp"
-        android:hint="Insira seu nome de usuário"
-        android:inputType="textPersonName"
-        android:singleLine="true"
-        app:layout_constraintBottom_toTopOf="@+id/email"
+
+    <FrameLayout
+        android:id="@+id/Fragmnet_Alpha"
+        android:name="com.example.firebase_trabalho.Class_Fragment.Class_Fragment_Login"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/Switch_cadastro_login"
+        android:layout_width="208dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="672dp"
+        android:background="@drawable/switch_menager_color"
+        android:shadowColor="@color/cardview_light_background"
+        android:showText="true"
+        android:switchMinWidth="190dp"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:textColor="#000000"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textColorLink="@android:color/background_dark"
+        android:textCursorDrawable="@android:color/background_dark"
+        android:textOff="CADASTRAR"
+        android:textOn="LOGIN"
+        android:thumbTint="#123"
+        android:trackTint="#123"
+        android:trackTintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/bt_cadastrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:onClick="usuarioExistente"
-        android:text="Cadastrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_login" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/bt_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:onClick="logar"
-        android:text="Logar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senha" />
-
-    <EditText
-        android:id="@+id/senha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:hint="Insira sua Senha"
-        android:singleLine="true"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="188dp"
-        android:hint="Insira seu Email"
-        android:singleLine="true"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         email = (EditText) findViewById(R.id.email);
         pass = (EditText) findViewById(R.id.senha);
-        user = (EditText) findViewById(R.id.user);
+        //user = (EditText) findViewById(R.id.user);
 
     }
 

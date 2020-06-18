@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+   >
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="199dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/btn_redondo"
+        android:fontFamily="sans-serif-thin"
+        android:text="Cadastrar"
+        android:textColor="#EDEDF0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551"
+    />
+
+    <TextView
+        android:id="@+id/txt_Cadastro_Login"
+        android:layout_width="114dp"
+        android:layout_height="19dp"
+        android:fontFamily="sans-serif"
+        android:text="Digite sua senha"
+        android:textColor="#EDEDF0"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Cadastro_Email"
+        app:layout_constraintVertical_bias="0.87"
+    />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#EDEDF0"
+        android:drawableRight="@drawable/password"
+        android:ems="10"
+        android:fontFamily="sans-serif-thin"
+        android:hint="senha"
+        android:inputType="textPersonName"
+        android:textColor="#C1C1CE"
+        android:textColorHint="#EDEDF0"
+        android:textCursorDrawable="@drawable/cursor_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638"
+    />
+
+    <EditText
+
+        android:id="@+id/editText2"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#C1C1CE"
+        android:drawableRight="@drawable/email_icon"
+        android:ems="10"
+        android:fontFamily="sans-serif-thin"
+        android:hint="e-mail"
+        android:inputType="textPersonName"
+        android:shadowColor="@color/cardview_shadow_start_color"
+        android:textColor="#EDEDF0"
+        android:textColorHint="#EDEDF0"
+        android:textCursorDrawable="@drawable/cursor_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451"
+    />
+
+    <TextView
+
+        android:id="@+id/txt_Cadastro_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Digite seu email"
+        android:textColor="#EDEDF0"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928"
+     />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

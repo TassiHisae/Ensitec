@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+   <size
+       android:width="1.5dp"
+       android:height="@dimen/cardview_compat_inset_shadow"
+   />
+
+    <solid
+        android:color="#FFFFFF"
+    />
+
+</shape>

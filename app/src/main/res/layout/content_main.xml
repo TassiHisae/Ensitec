@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela_login"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="199dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_redondo"
+        android:text="LOGIN COM GOOGLE"
+        android:drawableLeft="@drawable/icon_google"
+        android:paddingLeft="10dip"
+        android:textColor="#EDEDF0"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="199dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_redondo"
+        android:text="LOGIN COM FACEBOOK"
+        android:drawableLeft="@drawable/icon_face"
+        android:paddingLeft="10dip"
+        android:textColor="#EDEDF0"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="199dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/btn_redondo"
+        android:text="LOGIN"
+        android:textColor="#EDEDF0"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="ENTRAR"
+        android:textColor="#EDEDF0"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OU ENTRE USANDO SEU E-MAIL"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="18dp"
+        android:textColor="#EDEDF0"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="#EDEDF0"
+        android:background="@drawable/edite_color"
+        android:ems="10"
+        android:hint="senha"
+        android:inputType="textPersonName"
+        android:textColor="#C1C1CE"
+        android:textColorHint="#EDEDF0"
+        android:fontFamily="sans-serif-thin"
+        android:drawableRight="@drawable/loke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="#C1C1CE"
+        android:background="@drawable/edite_color"
+        android:ems="10"
+        android:hint="e-mail"
+        android:inputType="textPersonName"
+        android:textColor="#EDEDF0"
+        android:textColorHint="#EDEDF0"
+        android:fontFamily="sans-serif-thin"
+        android:shadowColor="@color/cardview_shadow_start_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EQUECI A SENHA"
+        android:textColor="#EDEDF0"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.297" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
